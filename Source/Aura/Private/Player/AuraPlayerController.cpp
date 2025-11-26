@@ -78,10 +78,6 @@ void AAuraPlayerController::CursorTrace()
 			// Case B
 			ThisActor->HighlightActor();
 		}
-		else
-		{
-			// Case A - both are null, do nothing
-		}
 	}
 	else // LastActor is valid
 	{
