@@ -87,6 +87,15 @@ void FAuraGameplayTags::InitializeNativeGameplayTags()
 		FName("Attributes.Secondary.MaxMana"),
 		LOCTEXT("MaxMana", "Maximum amount of Mana obtainable").ToString()
 		);
+	
+	GameplayTags.Attributes_Vital_Health = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("Attributes.Vital.Health"),
+		LOCTEXT("Health", "Current Health").ToString()
+		);
+	GameplayTags.Attributes_Vital_Mana = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("Attributes.Vital.Mana"),
+		LOCTEXT("Mana", "Current Mana").ToString()
+		);
 }
 
 #undef LOCTEXT_NAMESPACE
